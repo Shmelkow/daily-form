@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div class="container">
+
+        <form action="/" class="ba-form">
+            <legend class="ba-form__title">Account form</legend>
+
+            <div class="ba-form-header">
+                <img src="img/sign_up_icon.png" alt="key logo">
+                <h1 class="ba-header__head">Create your free account</h1>
+                <p class="ba-header__text">Come and join our cool and amazing community, fill in your details to get started. Already have an account? <a href="#" class="ba-account__link">Log in</a>.</p>
+            </div>
+
+            <div class="ba-form-names">
+                <div class="ba-form-control ba-form_w50">
+                    <!--<label for="firstName" class="ba-form__label"></label>-->
+                    <input type="text" id="firstName" class="ba-form__input"placeholder="First name" required>
+                </div>
+    
+                <div class="ba-form-control ba-form_w50">
+                    <!--<label for="lastName" class="ba-form__label"></label>-->
+                    <input type="text" id="lastName" class="ba-form__input" placeholder="Last name" required>
+                </div>
+            </div>         
+
+            <div class="ba-form-control">
+                <!--<label for="userEmail" class="ba-form__label"></label>-->
+                <input type="email" id="userEmail" class="ba-form__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email adress" required>
+            </div>
+
+            <div class="ba-form-control">
+                <!--<label for="password" class="ba-form__label"></label>-->
+                <input type="password" id="password" class="ba-form__input"placeholder="Password" required>
+            </div>
+            
+            <div class="ba-form-control">
+                <button type="submit" class="ba-form__submit">Sign up for free</button>
+            </div>
+
+            <div class="ba-form-footer">
+                By clicking on “Sign up for free”, you agree to the <a href="#" class="ba-account__link">Terms of Service</a> and the <a href="#" class="ba-account__link">Privacy Policy</a>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
